@@ -1,0 +1,44 @@
+#hardstatus on
+#hardstatus alwayslastline
+#hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
+#vbell off
+#shell -$SHELL
+
+##############################################################################
+## .screenrc created by duncan brown (http://duncanbrown.org)
+###############################################################################
+
+autodetach     on
+crlf           off
+deflogin       off
+hardcopy_append        on
+startup_message        off
+vbell          on
+defscrollback      5000
+silencewait        15
+nethack            on
+activity       "activity in %n (%t) [%w:%s]~"
+bell           "%C -> %n%f %t went bang!"
+vbell_msg      " *BIP! BOP! BAM!* "
+shelltitle ""  # disable the standard window name
+
+###############################################################################
+## now we set the last two lines in our terminal to something useful & pretty
+##    (everything here can be found in the screen manpage under STRING ESCAPES)
+###############################################################################
+#
+## bright green on a blue background which is how i used to rock qmodem pro &
+#minicom
+## caption always "%{Gb} %?%-w%?%n.%t%?%u%?%{Gb}%?%+w%?%="
+## hardstatus alwayslastline "%{bG} %h%= %Y%m%d %c "
+#
+## the setup i used from 2005 until ~2010 when i trimmed it down a bit
+## caption always "%{rk}%?%-Lw%?%{-b}(%{+b}%n
+#%t%{-b})%{-b}%?(%u)%?%{rk}%?%+Lw%?%="
+## hardstatus alwayslastline "%{kb}[%{+b}%h%{-b}]%= %{kg}[%{+b}%Y%m%d %c%{-b}]"
+#
+## i like to use a dot to indicate my active window, you can change it to
+#whatever
+##                                   v change this
+caption always "%{rk} %?%-w%?%{rk}%n.%t%?%u%?%{rk}%?%+w%?%= "
+hardstatus alwayslastline "%{kG}%{.b}%{+b} %h%{-b}%= %{kg}%{+b}%Y%m%d %c%{-b}"
