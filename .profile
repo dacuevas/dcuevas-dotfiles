@@ -75,8 +75,11 @@ alias py34='python3.4'
 alias runpm='${HOME}/Projects/PMAnalyzer/runPM'
 alias pmanalyzer='python3.4 ${HOME}/Projects/PMAnalyzer/py/pmanalysis.py'
 
-# Miscellaneous
+# Git
 alias gitlog='git log --oneline --decorate --graph'
+alias gs='git status -v'
+
+# Miscellaneous
 alias oexcel='open -a /Applications/Microsoft\ Office\ 2011/Microsoft\ Excel.app'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
