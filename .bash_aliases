@@ -10,6 +10,7 @@ alias py34='python3.4'
 
 # PMAnalyzer
 alias runpm='${HOME}/Projects/PMAnalyzer/runPM'
+alias runpmanalysis='${HOME}/Projects/PMAnalyzer/runAnalysis -m -p -v'
 alias pmanalyzer='python3.4 ${HOME}/Projects/PMAnalyzer/py/pmanalysis.py'
 
 # Git
@@ -18,6 +19,9 @@ alias gs='git status -v'
 alias gca='git commit -a'
 alias gr='git remote -v'
 alias ga='git add'
+alias gb='git branch'
+alias gpush='git push'
+alias gclone='git clone'
 
 # Miscellaneous
 alias oexcel='open -a /Applications/Microsoft\ Office\ 2011/Microsoft\ Excel.app'
@@ -29,3 +33,5 @@ alias cdp='cd ${HOME}/Projects/'
 alias cdd='cd ${HOME}/Downloads/'
 alias cdpm='cd ${HOME}/Projects/PMAnalyzer/'
 alias cdwork='cd ${HOME}/Dropbox/Work/'
+
+alias focus='python /usr/local/lib/FOCUS_0.27_python_2.7.XX/focus.py'
