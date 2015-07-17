@@ -1,5 +1,6 @@
 # ls
 alias ll='ls -alF'
+alias llh='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
 alias cls='clear;ls;'
