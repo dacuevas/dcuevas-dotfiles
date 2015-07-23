@@ -100,6 +100,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+export PS1="\[\033[0;32m\]\u@\h\[\033[0m\][\[\033[0;36m\]\w\[\033[0m\]]\$ "
+
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
