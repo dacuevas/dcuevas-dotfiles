@@ -56,38 +56,3 @@ export PS1="\[\033[0;32m\]\u@\h\[\033[0m\][\[\033[0;36m\]\w\[\033[0m\]]\$ "
 # For ensuring /usr/local/sbin is second in the list
 export PATH=$(echo $PATH | sed 's|/usr/local/bin||; s|/usr/local/sbin||; s|::|:|; s|^:||; s|\(.*\)|/usr/local/bin:/usr/local/sbin:\1|')
 export PATH="$(brew --prefix josegonzalez/php/php55)/bin:$PATH"
-
-
-
-
-########## ALIASES ###########
-# ls
-#alias ll='ls -alF'
-#alias la='ls -A'
-#alias l='ls -CF'
-#alias cls='clear;ls;'
-#alias grep='grep --color=auto'
-#
-## Python
-#alias py34='python3.4'
-#
-## PMAnalyzer
-#alias runpm='${HOME}/Projects/PMAnalyzer/runPM'
-#alias pmanalyzer='python3.4 ${HOME}/Projects/PMAnalyzer/py/pmanalysis.py'
-#
-## Git
-#alias gl='git log --oneline --decorate --graph'
-#alias gs='git status -v'
-#alias gca='git commit -a'
-#alias gr='git remote -v'
-#
-## Miscellaneous
-#alias oexcel='open -a /Applications/Microsoft\ Office\ 2011/Microsoft\ Excel.app'
-## Add an "alert" alias for long running commands.  Use like so:
-##   sleep 10; alert
-#alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-#
-#alias cdp='cd ${HOME}/Projects/'
-#alias cdd='cd ${HOME}/Downloads/'
-#alias cdpm='cd ${HOME}/Projects/PMAnalyzer/'
-#alias cdwork='cd ${HOME}/Dropbox/Work/'
