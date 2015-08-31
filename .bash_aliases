@@ -4,14 +4,18 @@ alias llh='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
 alias cls='clear;ls;'
+
+# grep
 alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
 # Python
 alias py34='python3.4'
 
 # PMAnalyzer
 alias runpm='${HOME}/Projects/PMAnalyzer/runPM'
-alias runpmanalysis='${HOME}/Projects/PMAnalyzer/runAnalysis -m -p -v'
+alias runpmanalysis='${HOME}/Projects/PMAnalyzer/runAnalysis'
 alias pmanalyzer='python3.4 ${HOME}/Projects/PMAnalyzer/py/pmanalysis.py'
 
 # Git
