@@ -81,12 +81,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-alias cls='clear;ls;'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -117,15 +111,10 @@ PATH=$PATH:$HOME/ncbi-blast-2.2.29+/bin
 
 alias gnopen='gnome-open'
 alias librecalc='libreoffice --calc'
-alias py34='python3.4'
-alias runpm='${HOME}/Projects/PMAnalyzer/runPM'
-alias pmanalyzer='python3.4 ${HOME}/Projects/PMAnalyzer/py/pmanalysis.py'
 
 PATH=$PATH:$HOME/circos/current/bin
 PATH=$PATH:$HOME/samtools
 PATH=$PATH:$HOME/bedtools/bin
-
-alias gitlog='git log --oneline --decorate --graph'
 
 export PYTHONPATH=$PYTHONPATH:${HOME}/Projects/FuzzyMetabolicNetworks/
 
