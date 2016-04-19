@@ -47,7 +47,7 @@ fi
 PATH=$PATH:$HOME/bin
 HISTTIMEFORMAT="%F %T "
 export EDITOR="vim"
-export PYTHONPATH=$PYTHONPATH:${HOME}/Projects/FuzzyMetabolicNetworks/
+export PYTHONPATH=$PYTHONPATH:${HOME}/Projects/FuzzyMetabolicNetworks/:${HOME}/Projects/SEED_Servers_Python/
 PERL_MB_OPT="--install_base \"/Users/dcuevas/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/dcuevas/perl5"; export PERL_MM_OPT;
 
@@ -56,3 +56,10 @@ export PS1="\[\033[0;32m\]\u@\h\[\033[0m\][\[\033[0;36m\]\w\[\033[0m\]]\$ "
 # For ensuring /usr/local/sbin is second in the list
 export PATH=$(echo $PATH | sed 's|/usr/local/bin||; s|/usr/local/sbin||; s|::|:|; s|^:||; s|\(.*\)|/usr/local/bin:/usr/local/sbin:\1|')
 export PATH="$(brew --prefix josegonzalez/php/php55)/bin:$PATH"
+
+export ModelSEEDDatabase=${HOME}/Projects/ModelSEEDDatabase
+export PYFBA_MEDIA_DIR=${HOME}/Projects/PyFBA/media
+
+export PATH=$PATH:/Applications/myRAST.app/bin
+
+export PYTHONSTARTUP=${HOME}/.pythonrc
