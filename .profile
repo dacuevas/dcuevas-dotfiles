@@ -56,6 +56,7 @@ export PS1="\[\033[0;32m\]\u@\h\[\033[0m\][\[\033[0;36m\]\w\[\033[0m\]]\$ "
 # For ensuring /usr/local/sbin is second in the list
 export PATH=$(echo $PATH | sed 's|/usr/local/bin||; s|/usr/local/sbin||; s|::|:|; s|^:||; s|\(.*\)|/usr/local/bin:/usr/local/sbin:\1|')
 export PATH="$(brew --prefix josegonzalez/php/php55)/bin:$PATH"
+export PATH=$PATH:${HOME}/Projects/PMAnalyzer/misc/scripts
 
 export ModelSEEDDatabase=${HOME}/Projects/ModelSEEDDatabase
 export PYFBA_MEDIA_DIR=${HOME}/Projects/PyFBA/media

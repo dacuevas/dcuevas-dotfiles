@@ -40,3 +40,11 @@ alias cdpm='cd ${HOME}/Projects/PMAnalyzer/'
 alias cdwork='cd ${HOME}/Dropbox/Work/'
 
 alias focus='python /usr/local/lib/FOCUS_0.27_python_2.7.XX/focus.py'
+
+# ssh
+alias ssant='ssh anthill'
+alias ssvdm='ssh vdm'
+alias ssed='ssh ed_pub'
+
+alias line='for(( c=1; c<=$COLUMNS; c++)); do printf "-"; done; printf "\n";'
+alias leSS='less -S'
