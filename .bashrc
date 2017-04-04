@@ -81,7 +81,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -102,21 +101,5 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-PATH=$PATH:/usr/local/Qt-5.3.1/bin
-
-PATH=$PATH:$HOME/bin
 HISTTIMEFORMAT="%F %T "
 export EDITOR="vim"
-PATH=$PATH:$HOME/ncbi-blast-2.2.29+/bin
-
-alias gnopen='gnome-open'
-alias librecalc='libreoffice --calc'
-
-PATH=$PATH:$HOME/circos/current/bin
-PATH=$PATH:$HOME/samtools
-PATH=$PATH:$HOME/bedtools/bin
-
-export PYTHONPATH=$PYTHONPATH:${HOME}/Projects/FuzzyMetabolicNetworks/
-
-PERL_MB_OPT="--install_base \"/Users/dcuevas/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/dcuevas/perl5"; export PERL_MM_OPT;
