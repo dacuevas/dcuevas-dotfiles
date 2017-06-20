@@ -3,6 +3,7 @@ alias ll='ls -alF'
 alias llh='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
+alias l1='ls -1'
 alias cls='clear;ls;'
 
 # grep
@@ -44,7 +45,7 @@ alias focus='python /usr/local/lib/FOCUS_0.27_python_2.7.XX/focus.py'
 # ssh
 alias ssant='ssh anthill'
 alias ssvdm='ssh vdm'
-alias ssed='ssh ed_pub'
+alias ssed='ssh edpub'
 
 alias line='for(( c=1; c<=$COLUMNS; c++)); do printf "-"; done; printf "\n";'
 alias leSS='less -S'
