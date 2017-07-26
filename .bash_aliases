@@ -49,3 +49,4 @@ alias ssed='ssh edpub'
 
 alias line='for(( c=1; c<=$COLUMNS; c++)); do printf "-"; done; printf "\n";'
 alias leSS='less -S'
+alias du1='du -h -d 1 | gsort -hr'
