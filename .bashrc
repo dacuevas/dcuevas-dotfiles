@@ -54,7 +54,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 #if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:[\[\033[01;36m\]\w\[\033[00m\]]\n\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[0;32m\]\u@\h\[\033[00m\][\[\033[0;36m\]\w\[\033[00m\]]\n\$ '
 #else
 #    PS1='${debian_chroot:+($debian_chroot)}\u@\h:[\w]\n\$ '
 #fi
@@ -81,6 +81,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# Add my own directory colors
+LS_COLORS=$LS_COLORS:'di=0;36:ln=1;31:pi=1;93:ex=0;35:tw=0;32:ow=0;32:'; export LS_COLORS
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -104,6 +107,10 @@ fi
 HISTTIMEFORMAT="%F %T "
 export EDITOR="vim"
 
-export ModelSEEDDatabase=${HOME}/github/ModelSEEDDatabase
-export PYFBA_MEDIA_DIR=${HOME}/github/PyFBA/media
+export ModelSEEDDatabase=${HOME}/ModelSEEDDatabase
+export PYFBA_MEDIA_DIR=${HOME}/PyFBA/media
 export PYTHONSTARTUP=${HOME}/.pythonrc
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${HOME}/glpk/glpk_bin/lib
+export PATH=$PATH:${HOME}/glpk/glpk_bin/bin
+export PYTHONPATH=$PYTHONPATH:${HOME}/PyFBA
